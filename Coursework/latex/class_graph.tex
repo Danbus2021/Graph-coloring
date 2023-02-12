@@ -1,0 +1,194 @@
+\hypertarget{class_graph}{}\section{Graph Class Reference}
+\label{class_graph}\index{Graph@{Graph}}
+
+
+class \mbox{\hyperlink{class_graph}{Graph}}  
+
+
+
+
+{\ttfamily \#include $<$Graph.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_graph_a616456b0910e93422493040d35b06239}{read\+\_\+graph}} (const string \&fname)
+\item 
+int \mbox{\hyperlink{class_graph_a15aa3f0cf781e6401b770386b3806bc2}{search\+\_\+degree}} (int ver)
+\begin{DoxyCompactList}\small\item\em функция, для поиска степени вершины графа \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_graph_aef156ae0e0d14b85f46eaa01d8348c0f}{generator\+\_\+colour}} (int n)
+\begin{DoxyCompactList}\small\item\em функция, для покраски графа \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_graph_a2ed0d56928f1a12a9aaada8e5d1cc77f}{vertex\+\_\+shaded\+\_\+check}} (unordered\+\_\+map$<$ int, bool $>$ pr)
+\begin{DoxyCompactList}\small\item\em функция, проверяющая покрашены ли вершины графа,. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graph_a1b371a313cf7e943139cceda71711e25}\label{class_graph_a1b371a313cf7e943139cceda71711e25}} 
+void \mbox{\hyperlink{class_graph_a1b371a313cf7e943139cceda71711e25}{greedy}} ()
+\begin{DoxyCompactList}\small\item\em жадный алгоритм раскраски графа \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graph_abb07f9a9f1852e996b388160481f975c}\label{class_graph_abb07f9a9f1852e996b388160481f975c}} 
+void \mbox{\hyperlink{class_graph_abb07f9a9f1852e996b388160481f975c}{overkill}} ()
+\begin{DoxyCompactList}\small\item\em переборный алгоритм раскраски графа \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graph_a87b848e97501e9ed30f1ed0a457c9185}{write\+\_\+dot}} (const char $\ast$fname)
+\begin{DoxyCompactList}\small\item\em функция, которая выводит граф в формате graphviz. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graph_a9b17ebc5472c5813dcef163e983a3a70}{write\+\_\+coloring}} (const char $\ast$fname)
+\begin{DoxyCompactList}\small\item\em функция, записывающаю раскраску графа в выходной файл \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_graph_a6e7e592ff1b087e344eb37cdc8b65e00}{check\+\_\+vertex\+\_\+colour}} (int ver1, int ver2)
+\begin{DoxyCompactList}\small\item\em функция, проверящая поркашены ли вершины в одинаковый цвет \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool $\ast$$\ast$ \mbox{\hyperlink{class_graph_a11d8c4f9e352a53522578b7d121b4c2c}{graph}}
+\begin{DoxyCompactList}\small\item\em матрица смежности \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graph_a5370391b46f881531a58c969e1a26150}\label{class_graph_a5370391b46f881531a58c969e1a26150}} 
+unordered\+\_\+map$<$ int, string $>$ \mbox{\hyperlink{class_graph_a5370391b46f881531a58c969e1a26150}{paint}}
+\begin{DoxyCompactList}\small\item\em переменная для покраски вершин \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graph_a7360ef28a6c34ec1d2d9eb436935e354}\label{class_graph_a7360ef28a6c34ec1d2d9eb436935e354}} 
+unordered\+\_\+map$<$ int, bool $>$ \mbox{\hyperlink{class_graph_a7360ef28a6c34ec1d2d9eb436935e354}{check}}
+\begin{DoxyCompactList}\small\item\em переменная для проверки покрашены вершины или нет \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graph_a34e647deffeebd4408149691f594a52f}\label{class_graph_a34e647deffeebd4408149691f594a52f}} 
+int \mbox{\hyperlink{class_graph_a34e647deffeebd4408149691f594a52f}{vertex}}
+\begin{DoxyCompactList}\small\item\em количество вершин \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graph_afac053e82e7ca5be4a5e5484f06fee7e}\label{class_graph_afac053e82e7ca5be4a5e5484f06fee7e}} 
+int \mbox{\hyperlink{class_graph_afac053e82e7ca5be4a5e5484f06fee7e}{chromatic\+\_\+number}} = 0
+\begin{DoxyCompactList}\small\item\em хроматическое число \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_graph_add6e039d5c8c8f74cc8492ff1f4cfbc5}\label{class_graph_add6e039d5c8c8f74cc8492ff1f4cfbc5}} 
+vector$<$ int $>$ \mbox{\hyperlink{class_graph_add6e039d5c8c8f74cc8492ff1f4cfbc5}{shaded\+\_\+vertices}}
+\begin{DoxyCompactList}\small\item\em вектор покрашенных в один цвет вершин \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class \mbox{\hyperlink{class_graph}{Graph}} 
+
+Создан для решения задачи о раскраске графа 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_graph_a6e7e592ff1b087e344eb37cdc8b65e00}\label{class_graph_a6e7e592ff1b087e344eb37cdc8b65e00}} 
+\index{Graph@{Graph}!check\+\_\+vertex\+\_\+colour@{check\+\_\+vertex\+\_\+colour}}
+\index{check\+\_\+vertex\+\_\+colour@{check\+\_\+vertex\+\_\+colour}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{check\+\_\+vertex\+\_\+colour()}{check\_vertex\_colour()}}
+{\footnotesize\ttfamily bool Graph\+::check\+\_\+vertex\+\_\+colour (\begin{DoxyParamCaption}\item[{int}]{ver1,  }\item[{int}]{ver2 }\end{DoxyParamCaption})}
+
+
+
+функция, проверящая поркашены ли вершины в одинаковый цвет 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ver1,ver2} & Сравниваемые вершины \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+если покрашены в один цвет -\/ 1, иначе -\/ 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graph_aef156ae0e0d14b85f46eaa01d8348c0f}\label{class_graph_aef156ae0e0d14b85f46eaa01d8348c0f}} 
+\index{Graph@{Graph}!generator\+\_\+colour@{generator\+\_\+colour}}
+\index{generator\+\_\+colour@{generator\+\_\+colour}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{generator\+\_\+colour()}{generator\_colour()}}
+{\footnotesize\ttfamily string Graph\+::generator\+\_\+colour (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+функция, для покраски графа 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Переменная, определяющая цвет \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Цвет 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graph_a616456b0910e93422493040d35b06239}\label{class_graph_a616456b0910e93422493040d35b06239}} 
+\index{Graph@{Graph}!read\+\_\+graph@{read\+\_\+graph}}
+\index{read\+\_\+graph@{read\+\_\+graph}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{read\+\_\+graph()}{read\_graph()}}
+{\footnotesize\ttfamily void Graph\+::read\+\_\+graph (\begin{DoxyParamCaption}\item[{const string \&}]{fname }\end{DoxyParamCaption})}
+
+функция для считывания графа, представленного в виде матрицы смежности, из входного файла 
+\begin{DoxyParams}{Parameters}
+{\em fname} & Входной файл \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graph_a15aa3f0cf781e6401b770386b3806bc2}\label{class_graph_a15aa3f0cf781e6401b770386b3806bc2}} 
+\index{Graph@{Graph}!search\+\_\+degree@{search\+\_\+degree}}
+\index{search\+\_\+degree@{search\+\_\+degree}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{search\+\_\+degree()}{search\_degree()}}
+{\footnotesize\ttfamily int Graph\+::search\+\_\+degree (\begin{DoxyParamCaption}\item[{int}]{ver }\end{DoxyParamCaption})}
+
+
+
+функция, для поиска степени вершины графа 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ver} & Вершина, для которой будет происходить поиск степени \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Степень данной вершины графа 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graph_a2ed0d56928f1a12a9aaada8e5d1cc77f}\label{class_graph_a2ed0d56928f1a12a9aaada8e5d1cc77f}} 
+\index{Graph@{Graph}!vertex\+\_\+shaded\+\_\+check@{vertex\+\_\+shaded\+\_\+check}}
+\index{vertex\+\_\+shaded\+\_\+check@{vertex\+\_\+shaded\+\_\+check}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{vertex\+\_\+shaded\+\_\+check()}{vertex\_shaded\_check()}}
+{\footnotesize\ttfamily bool Graph\+::vertex\+\_\+shaded\+\_\+check (\begin{DoxyParamCaption}\item[{unordered\+\_\+map$<$ int, bool $>$}]{pr }\end{DoxyParamCaption})}
+
+
+
+функция, проверяющая покрашены ли вершины графа,. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pr} & Переменная для проверки покрашена вершина или нет \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+если покрашены все -\/ true, иначе -\/ false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graph_a9b17ebc5472c5813dcef163e983a3a70}\label{class_graph_a9b17ebc5472c5813dcef163e983a3a70}} 
+\index{Graph@{Graph}!write\+\_\+coloring@{write\+\_\+coloring}}
+\index{write\+\_\+coloring@{write\+\_\+coloring}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{write\+\_\+coloring()}{write\_coloring()}}
+{\footnotesize\ttfamily void Graph\+::write\+\_\+coloring (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fname }\end{DoxyParamCaption})}
+
+
+
+функция, записывающаю раскраску графа в выходной файл 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fname} & Выходной файл \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graph_a87b848e97501e9ed30f1ed0a457c9185}\label{class_graph_a87b848e97501e9ed30f1ed0a457c9185}} 
+\index{Graph@{Graph}!write\+\_\+dot@{write\+\_\+dot}}
+\index{write\+\_\+dot@{write\+\_\+dot}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{write\+\_\+dot()}{write\_dot()}}
+{\footnotesize\ttfamily void Graph\+::write\+\_\+dot (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fname }\end{DoxyParamCaption})}
+
+
+
+функция, которая выводит граф в формате graphviz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fname} & Выходной файл в формате .dot \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_graph_a11d8c4f9e352a53522578b7d121b4c2c}\label{class_graph_a11d8c4f9e352a53522578b7d121b4c2c}} 
+\index{Graph@{Graph}!graph@{graph}}
+\index{graph@{graph}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{graph}{graph}}
+{\footnotesize\ttfamily bool$\ast$$\ast$ Graph\+::graph}
+
+
+
+матрица смежности 
+
+Создан для решения задачи о раскраске графа 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Graph.\+h\item 
+Graph.\+cpp\end{DoxyCompactItemize}

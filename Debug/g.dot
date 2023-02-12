@@ -1,0 +1,30 @@
+graph {
+10[style = filled, fillcolor = DeepPink];
+2[style = filled, fillcolor = DeepPink];
+12[style = filled, fillcolor = DeepPink];
+4[style = filled, fillcolor = DeepPink];
+7[style = filled, fillcolor = DeepPink];
+0[style = filled, fillcolor = Lime];
+8[style = filled, fillcolor = DeepPink];
+1[style = filled, fillcolor = Lime];
+6[style = filled, fillcolor = Lime];
+11[style = filled, fillcolor = Lime];
+5[style = filled, fillcolor = MediumSlateBlue];
+3[style = filled, fillcolor = MediumSlateBlue];
+9[style = filled, fillcolor = MediumSlateBlue];
+  0--2; 
+  0--4; 
+  1--2; 
+  1--3; 
+  1--5; 
+  1--9; 
+  2--3; 
+  2--5; 
+  3--4; 
+  4--6; 
+  5--8; 
+  6--7; 
+  7--9; 
+  10--11; 
+  11--12; 
+}

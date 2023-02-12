@@ -1,0 +1,14 @@
+Chromatic_number = 13
+12 [style = filled, fillcolor = Teal];
+11 [style = filled, fillcolor = Olive];
+10 [style = filled, fillcolor = Navy];
+9 [style = filled, fillcolor = Azure];
+8 [style = filled, fillcolor = MistyRose];
+7 [style = filled, fillcolor = Black];
+6 [style = filled, fillcolor = DarkSlateGray];
+5 [style = filled, fillcolor = LightSlateGray];
+4 [style = filled, fillcolor = DimGrey];
+3 [style = filled, fillcolor = Gainsboro];
+2 [style = filled, fillcolor = MediumSlateBlue];
+1 [style = filled, fillcolor = Lime];
+0 [style = filled, fillcolor = DeepPink];

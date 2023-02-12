@@ -1,0 +1,11 @@
+Chromatic_number = 4
+9 [style = filled, fillcolor = DeepPink];
+8 [style = filled, fillcolor = Lime];
+7 [style = filled, fillcolor = MediumSlateBlue];
+6 [style = filled, fillcolor = Lime];
+5 [style = filled, fillcolor = DeepPink];
+4 [style = filled, fillcolor = DeepPink];
+3 [style = filled, fillcolor = Gainsboro];
+2 [style = filled, fillcolor = MediumSlateBlue];
+1 [style = filled, fillcolor = Lime];
+0 [style = filled, fillcolor = DeepPink];
